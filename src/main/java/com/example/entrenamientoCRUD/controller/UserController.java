@@ -66,7 +66,7 @@ public class UserController {
                 loginRequest.getPassword()
         );
         if (autenticxationUser.isPresent()) {
-            return new ResponseEntity<>("Se inicio secion para el usuario: " + autenticxationUser.get().getName(),
+            return new ResponseEntity<>("Se inicio sesion para el usuario: " + autenticxationUser.get().getName(),
                     HttpStatus.OK);
         }else {
             return new ResponseEntity<>("Credenciales incorrectas", HttpStatus.UNAUTHORIZED);

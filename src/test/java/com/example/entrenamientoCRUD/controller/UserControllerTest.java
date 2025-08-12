@@ -144,7 +144,7 @@ public class UserControllerTest {
     @Test
     void seleteUser_shouldReturnNotFound() throws Exception {
         doNothing().when(userService).deleteUser(99L);
-        when(userService.deleteUser(99L))
-                .thenThrow(new RuntimeException("El usuario con id: " + any(Long.class) + " no existe."));
+        /*when(userService.deleteUser(99L))
+                .thenThrow(new RuntimeException("El usuario con id: " + any(Long.class) + " no existe."));*/
     }
 }
